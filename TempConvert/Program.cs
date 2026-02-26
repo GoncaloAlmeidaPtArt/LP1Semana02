@@ -21,6 +21,7 @@ namespace TempConvert
 
                     double temperaturaFC = Convert.ToDouble(temperatura);
                     Console.WriteLine(temperaturaFC + " C = " + (temperaturaFC * 1.8 + 32) + " F");
+                    Console.WriteLine(Math.Abs(temperaturaFC));
 
                     break;
 
@@ -28,7 +29,12 @@ namespace TempConvert
 
                     double temperaturaFF = Convert.ToDouble(temperatura);
                     Console.WriteLine(temperaturaFF + " F = " + ((temperaturaFF - 32)/1.8) + " C");
-                    
+                    Console.WriteLine(Math.Abs(temperaturaFF));
+
+                    break;
+
+                default:
+
                     break;
 
             }

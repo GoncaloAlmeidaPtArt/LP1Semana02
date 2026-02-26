@@ -20,20 +20,22 @@ namespace TempConvert
                 case "C":
 
                     double temperaturaFC = Convert.ToDouble(temperatura);
-                    Console.WriteLine(temperaturaFC + " C = " + (temperaturaFC * 1.8 + 32) + " F");
-                    Console.WriteLine(Math.Abs(temperaturaFC));
+                    Console.WriteLine($"{temperaturaFC:f2} C = {temperaturaFC * 1.8 + 32:f2} F");
+                    Console.WriteLine($"Absolute Value: {Math.Abs(temperaturaFC * 1.8 + 32):f2}");
 
                     break;
 
                 case "F":
 
                     double temperaturaFF = Convert.ToDouble(temperatura);
-                    Console.WriteLine(temperaturaFF + " F = " + ((temperaturaFF - 32)/1.8) + " C");
-                    Console.WriteLine(Math.Abs(temperaturaFF));
+                    Console.WriteLine($"{temperaturaFF:f2} F = {(temperaturaFF - 32)/1.8:f2} C");
+                    Console.WriteLine($"Absolute Value: {Math.Abs((temperaturaFF - 32)/1.8):f2}");
 
                     break;
 
                 default:
+
+                    Console.WriteLine("Invalid unit.");
 
                     break;
 

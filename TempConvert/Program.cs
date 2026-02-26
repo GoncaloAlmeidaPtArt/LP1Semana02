@@ -8,7 +8,30 @@ namespace TempConvert
         private static void Main(string[] args)
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
-            Console.WriteLine("Hello LP!");
+
+            Console.Write("Temperature: ");
+            string temperatura = Console.ReadLine();
+
+            Console.Write("Unit (C/F): ");
+            string unidade = Console.ReadLine();
+
+            switch (unidade)
+            {
+                case "C":
+
+                    double temperaturaFC = Convert.ToDouble(temperatura);
+                    Console.WriteLine(temperaturaFC + " C = " + (temperaturaFC * 1.8 + 32) + " F");
+
+                    break;
+
+                case "F":
+
+                    double temperaturaFF = Convert.ToDouble(temperatura);
+                    Console.WriteLine(temperaturaFF + " F = " + ((temperaturaFF - 32)/1.8) + " C");
+                    
+                    break;
+
+            }
         }
     }
 }

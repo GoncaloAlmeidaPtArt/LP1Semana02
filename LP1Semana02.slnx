@@ -1,2 +1,4 @@
 <Solution>
+  <Project Path="SmoothOperator/SmoothOperator.csproj" />
+  <Project Path="TempConvert/TempConvert.csproj" />
 </Solution>
